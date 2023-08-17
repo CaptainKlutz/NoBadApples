@@ -1,0 +1,13 @@
+name = "No Bad Apples"
+author = "RektTangle"
+version = "0.3.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "3b065eee41f78a732c9e3f61bd3cfa6ffff0fc27e5db744ebb2eb61ccb095530"
+
+[versions]
+fabric = "0.14.22"
+minecraft = "1.19.2"

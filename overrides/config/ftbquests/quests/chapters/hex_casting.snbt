@@ -1,0 +1,3832 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hex_casting"
+	group: "244F516C4853FD2F"
+	icon: "hexcasting:charged_amethyst"
+	id: "109946D845AD863E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "28E042EF7D75CFF0"
+			subtitle: "Enlightenment in the palm of your hand. "
+			tasks: [{
+				id: "447270FC3B0905C3"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "hexcasting:thehexbook"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2FF2858958780754"]
+			id: "4AB25C48380DA815"
+			subtitle: "Amethyst shards are worth 5 Media."
+			tasks: [{
+				id: "3005271DDDCF79B0"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2FF2858958780754"]
+			dependency_requirement: "all_started"
+			id: "18EB7E431D0CD159"
+			subtitle: "Charged amethyst is worth 10 Media."
+			tasks: [{
+				id: "794CA4524FB1313F"
+				item: "hexcasting:charged_amethyst"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FF2858958780754"]
+			id: "2D9C02AA39A1B820"
+			subtitle: "Amethyst dust is worth 1 Media. It can also be used on scrolls to show order."
+			tasks: [{
+				id: "7FFBBB6F71F8987D"
+				item: "hexcasting:amethyst_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["28E042EF7D75CFF0"]
+			id: "2FF2858958780754"
+			subtitle: "Media is the lifeblood of hex casting, it can be taken from various forms of amethyst, and more..."
+			tasks: [{
+				id: "3E5079B3D091A9E5"
+				title: "The Forms of Media"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["584682244E5204CA"]
+			id: "506ED8861F8F564E"
+			subtitle: "No luck on that cast perhaps you're just missing something. A new form of media perhaps."
+			tasks: [{
+				advancement: "hexcasting:y_u_no_cast_angy"
+				criterion: ""
+				id: "382C743DA3E09711"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["434AD370CFCBB7D2"]
+			id: "4CC5C9D78C27C7EE"
+			subtitle: "You've found it, new magics and madness all intertwined. They are out there just waiting for you to find them."
+			tasks: [{
+				advancement: "hexcasting:enlightenment"
+				criterion: ""
+				id: "795DF00AB6360715"
+				type: "advancement"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2471D6BFAAA409B3"]
+			description: [""]
+			icon: "hexcasting:artifact"
+			id: "28BBE28FBD03DA12"
+			rewards: [{
+				id: "20518D006992A0EB"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Craft Artifact\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								0b
+								4b
+								5b
+								5b
+								5b
+								5b
+								5b
+								1b
+								4b
+								0b
+								5b
+								0b
+								5b
+								0b
+								5b
+								0b
+								5b
+								0b
+								5b
+								0b
+								0b
+								5b
+								5b
+								1b
+								4b
+								2b
+								4b
+								1b
+								5b
+								5b
+								1b
+								5b
+								5b
+								1b
+								4b
+								2b
+								4b
+								1b
+								5b
+								5b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Artifacts can cast from both internal charge and held amethyst. Spell: [Media Entity->(Pattern of Linked Spell)->Craft Artifact]"
+			tasks: [{
+				id: "220C2B073733A31D"
+				item: "hexcasting:artifact"
+				type: "item"
+			}]
+			title: "Craft Artifact"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28E042EF7D75CFF0"]
+			id: "08606559F66B74E5"
+			subtitle: "The hand of magic, use this to draw your spells. (Crouch+Right Click to clear)"
+			tasks: [{
+				id: "0CD1B3FCB680B8C0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "hexcasting:staves"
+					}
+				}
+				title: "Any #hexcasting:staves"
+				type: "item"
+			}]
+			title: "Hex Staff"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["28E042EF7D75CFF0"]
+			id: "2471D6BFAAA409B3"
+			rewards: [
+				{
+					id: "36C61BF68C529845"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Left\"}"
+							}
+							pattern: {
+								angles: [B;
+									5b
+									5b
+									5b
+								]
+								start_dir: 4b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3051E37507578CA7"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Right\"}"
+							}
+							pattern: {
+								angles: [B;
+									1b
+									1b
+									1b
+								]
+								start_dir: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D255DBB89B1F63D"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Single\"}"
+							}
+							pattern: {
+								angles: [B;
+									5b
+									5b
+									5b
+									4b
+									0b
+								]
+								start_dir: 4b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Spells can be cast using devices other than staves too. These however require spell to be prepared. (Given scrolls act as parentheses) (Single is used for highlighting single patterns)"
+			tasks: [{
+				id: "3EC067063836C62F"
+				type: "checkmark"
+			}]
+			title: "Alternative Casting"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["28E042EF7D75CFF0"]
+			id: "3F38B088FFD88DA1"
+			subtitle: "There are various tools to assist or alter manners of casting."
+			tasks: [{
+				id: "3E1ABE0CEE092118"
+				type: "checkmark"
+			}]
+			title: "Hex Tools"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F38B088FFD88DA1"]
+			id: "66FA4E8760D7BF21"
+			subtitle: "Focus can be used to store a single iota of information, such as entities, positions, or patterns. Can also be sealed with honeycomb to prevent overwrite."
+			tasks: [{
+				id: "4A344071EC62F321"
+				item: "hexcasting:focus"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F38B088FFD88DA1"]
+			id: "3D9F0774D4698B0D"
+			subtitle: "Abacus can be used to select a specific number when casting. Change size increments using control/offhand. (Crouch+Scroll to use, Crouch+Click to reset)"
+			tasks: [{
+				id: "7BFF75DD66D13AAB"
+				item: "hexcasting:abacus"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F38B088FFD88DA1"]
+			id: "470B876881284B2A"
+			subtitle: "Scrying lens can be equipped to see addtional info such as redstone, as well as held to increase casting grid size."
+			tasks: [{
+				id: "735F726545B36115"
+				item: "hexcasting:lens"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3F38B088FFD88DA1"]
+			id: "0BD5A337829A9FBE"
+			subtitle: "Jeweler's hammer works like a pickaxe but can only break blocks smaller a full block. Used for harvesting gem clusters without risking budding blocks."
+			tasks: [{
+				id: "16319E1EE9418163"
+				item: {
+					Count: 1b
+					id: "hexcasting:jeweler_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2471D6BFAAA409B3"]
+			id: "5C3AF893C5E73742"
+			rewards: [{
+				id: "30A78356723233B6"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Craft Trinket\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								0b
+								4b
+								5b
+								5b
+								5b
+								5b
+								5b
+								1b
+								4b
+								5b
+								1b
+								4b
+								1b
+								5b
+								5b
+								5b
+								1b
+								4b
+								1b
+								5b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Trinkets cast only from internal battery but can be recharged. Spell: [Media Entity->(Pattern of Linked Spell)->Craft Trinket]"
+			tasks: [{
+				id: "1CD36EFE091AA6DE"
+				item: "hexcasting:trinket"
+				type: "item"
+			}]
+			title: "Craft Trinket"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2471D6BFAAA409B3"]
+			id: "3AF0E67AE5534946"
+			rewards: [{
+				id: "09C865AB196D9213"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Craft Cypher\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								4b
+								5b
+								5b
+								5b
+								5b
+								5b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Cyphers cast from an internal battery, but cannot be recharged. Spell: [Media Entity->(Pattern of Linked Spell)->Craft Cypher]"
+			tasks: [{
+				id: "34ABA41F832E5790"
+				item: "hexcasting:cypher"
+				type: "item"
+			}]
+			title: "Craft Cypher"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2471D6BFAAA409B3"]
+			id: "6B5330DCB9692FF5"
+			subtitle: "Spellbooks can be used to store information like a focus, however it can 64 iotas instead of one. Pages can be sealed and named individually."
+			tasks: [{
+				id: "0A7AC3548E3AA4B3"
+				item: "hexcasting:spellbook"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"6B5330DCB9692FF5"
+				"66FA4E8760D7BF21"
+			]
+			dependency_requirement: "one_completed"
+			id: "285FA2F10493C4C3"
+			subtitle: "To use these implements one must be able to read and write the language of media."
+			tasks: [{
+				id: "6215C81203B07CB4"
+				type: "checkmark"
+			}]
+			title: "Literacy of Magic"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["285FA2F10493C4C3"]
+			icon: "minecraft:written_book"
+			id: "6730A3BE4619232B"
+			rewards: [
+				{
+					id: "67CCECF4F780FDC5"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Read\"}"
+							}
+							pattern: {
+								angles: [B;
+									4b
+									5b
+									5b
+									5b
+									5b
+									5b
+								]
+								start_dir: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23EA2C6687173D1E"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Evaluate\"}"
+							}
+							pattern: {
+								angles: [B;
+									2b
+									1b
+									4b
+									5b
+									5b
+								]
+								start_dir: 2b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Reading is used to copy and activate written spells and information. Spell: [Read->Evaluate]"
+			tasks: [{
+				id: "174917CBB18ADFE1"
+				type: "checkmark"
+			}]
+			title: "Reading"
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["285FA2F10493C4C3"]
+			icon: "minecraft:writable_book"
+			id: "67C780ECDCC12BC1"
+			rewards: [{
+				id: "337B058900A8F260"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Write\"}"
+						}
+						pattern: {
+							angles: [B;
+								2b
+								1b
+								1b
+								1b
+								1b
+								1b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Writing is used to note down any number of spells or factors. Spell: [(Written Information/Spell)->Write]"
+			tasks: [{
+				id: "51BB047C04C0A274"
+				type: "checkmark"
+			}]
+			title: "Writing"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["584682244E5204CA"]
+			id: "66871DE42BBE2217"
+			subtitle: "Basic spells, your go to magics for mobility, murder and music."
+			tasks: [{
+				id: "4A8C970A65092D18"
+				title: "Basic Spells"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["584682244E5204CA"]
+			id: "6831F6A301A24ADC"
+			subtitle: "Blockworks, all manner of spells to manipulate the world around you."
+			tasks: [{
+				id: "3B0025E2963C4349"
+				title: "Blockworks"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["584682244E5204CA"]
+			id: "07185D45CCB6AC09"
+			subtitle: "Nadirs, curse your foes with all manner of debuffs. Spell: [Entity->Duration->Power->Nadir]"
+			tasks: [{
+				id: "07D6A3815EC217A0"
+				title: "Nadirs"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["584682244E5204CA"]
+			id: "03DB9DA4BB72D652"
+			subtitle: "Spells added as part of the Hexal addon."
+			tasks: [{
+				id: "77412CB463BD4DF7"
+				title: "Hexal Spells"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["08606559F66B74E5"]
+			icon: "minecraft:player_head"
+			id: "584682244E5204CA"
+			rewards: [{
+				id: "39F490BB18BB3BCB"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Self\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								4b
+								5b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "The simplest of targeting patterns. Use this to mark yourself as entity."
+			tasks: [{
+				id: "57A76FA3329A0F41"
+				title: "Self"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["66871DE42BBE2217"]
+			icon: "minecraft:tnt"
+			id: "1A13009C254F92ED"
+			rewards: [{
+				id: "4DF31B33AF6C4D2A"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Explosion\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								4b
+								0b
+								4b
+								4b
+								0b
+								4b
+								4b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Explosion, good for removing things from an area, of object or living variety. Spell: [Position->Blast Power->Explosion]"
+			tasks: [{
+				id: "35EFA1756453318F"
+				title: "Explosion"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["66871DE42BBE2217"]
+			icon: "minecraft:fire_charge"
+			id: "3EABB2FEF123DA9E"
+			rewards: [{
+				id: "6B54B0360F3348D7"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Fireball\"}"
+						}
+						pattern: {
+							angles: [B;
+								2b
+								2b
+								0b
+								2b
+								2b
+								0b
+								2b
+								2b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Fireball, all the joy of Explosion with the added spice of napalm. Spell: [Position->Blast Power->Fireball]"
+			tasks: [{
+				id: "35C52D20857804FB"
+				title: "Fireball"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["66871DE42BBE2217"]
+			icon: "minecraft:oak_door"
+			id: "3A47E12C4062B6E2"
+			rewards: [{
+				id: "289FA0ECD240436F"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Blink\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								0b
+								5b
+								5b
+								5b
+								0b
+								4b
+								5b
+							]
+							start_dir: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Blink, for when you accept that walking is beneath you. Spell: [Entity->Distance Traveled->Blink]"
+			tasks: [{
+				id: "27766735D1EB8C9D"
+				title: "Blink"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66871DE42BBE2217"]
+			icon: "minecraft:arrow"
+			id: "1D9EDDDE8A83151B"
+			rewards: [{
+				id: "20C87E8144A9B244"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Impulse\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								0b
+								5b
+								5b
+								5b
+								0b
+								4b
+								5b
+								0b
+							]
+							start_dir: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Impulse, good for launching things, be they item or enemy. (Power/price scales with distence of entity from position) Spell: [Entity->Position Being Pulled To->Impulse]"
+			tasks: [{
+				id: "0807B49DA67350E2"
+				title: "Impulse"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "minecraft:cobblestone"
+			id: "4645B0A796194030"
+			rewards: [{
+				id: "57265842C0A7D5B7"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Place Block\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								1b
+								1b
+								1b
+								1b
+								2b
+								1b
+							]
+							start_dir: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Place a block at any position. (Block picked by inventory order) Spell: [Block Postion->Place Block]"
+			tasks: [{
+				id: "1E906984CD12B0A6"
+				title: "Place Block"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "57B29FF48C437970"
+			rewards: [{
+				id: "466BEAC3EDFD1B3A"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Break Block\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								4b
+								5b
+								5b
+								5b
+								5b
+								5b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Break the block at given position. Spell: [Block Position->Break Block]"
+			tasks: [{
+				id: "6BB4D662FEC216BA"
+				title: "Break Block"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "minecraft:water_bucket"
+			id: "5E2212EB1A206154"
+			rewards: [{
+				id: "63F1230C72E094A7"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Create Water\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								5b
+								4b
+								0b
+								5b
+								4b
+								2b
+								4b
+								5b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Summons water at a given position. Spell: [Block Position->Create Water]"
+			tasks: [{
+				id: "10A1B880861E48A0"
+				title: "Create Water"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "minecraft:bucket"
+			id: "5DF53A79DDCE9F20"
+			rewards: [{
+				id: "6099946E62F909FE"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Destroy Liquid\"}"
+						}
+						pattern: {
+							angles: [B;
+								2b
+								1b
+								2b
+								0b
+								1b
+								2b
+								4b
+								2b
+								1b
+							]
+							start_dir: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Destroys liquids at a position. Spell: [Block Postion->Destroy Liquid]"
+			tasks: [{
+				id: "23196D3BE70AE15A"
+				title: "Destroy Liquid"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "minecraft:grass_block"
+			id: "238C1B2A567B6F20"
+			rewards: [{
+				id: "711A1EC0B3275B6C"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Conjure Block\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								4b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Summon a block of media. Spell: [Block Position->Conjure Block]"
+			tasks: [{
+				id: "313706BA91A106F2"
+				title: "Conjure Block"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "minecraft:torch"
+			id: "3FF9C4B152B8EA3B"
+			rewards: [{
+				id: "51752868135C6D9D"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Conjure Light\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								2b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Summons a light fueled by media. Spell: [Block Position->Conjure Light]"
+			tasks: [{
+				id: "47506DE32F2FE926"
+				title: "Conjure Light"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "minecraft:bone_meal"
+			id: "58BEDBA1BDC677B9"
+			rewards: [{
+				id: "148B909D62FB426F"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Overgrow\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								5b
+								4b
+								5b
+								0b
+								4b
+								0b
+								5b
+								4b
+								5b
+								0b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "All the power of bone meal, without the bonemeal. [Block Position->Overgrow]"
+			tasks: [{
+				id: "4A53C34E4B56F35B"
+				title: "Overgrowth"
+				type: "checkmark"
+			}]
+			title: "Overgrow"
+			x: 3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "hexcasting:edified_log"
+			id: "1F2C6084256B996E"
+			rewards: [{
+				id: "040805386F004BD1"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Edify Sapling\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								5b
+								4b
+								5b
+								0b
+								2b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Infuse media into a sapling to mutate it into an edified tree. [Block Position->Edify Sapling]"
+			tasks: [{
+				id: "4C93D4924DDDA804"
+				title: "Edify Sapling"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: {
+				Count: 1b
+				id: "minecraft:flint_and_steel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4C09A5E42A0392EE"
+			rewards: [{
+				id: "0F79470303A49223"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Ignite\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								4b
+								5b
+								4b
+								0b
+								4b
+								0b
+								4b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Set fire to an area. Spell: [Block Position->Ignite]"
+			tasks: [{
+				id: "43858CD544A526FF"
+				title: "Ignite"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["07185D45CCB6AC09"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:weakness"
+				}
+			}
+			id: "4A5702AABFEBE388"
+			rewards: [{
+				id: "2F82949BD45BCEB4"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Weakness\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								5b
+								5b
+								4b
+								5b
+								0b
+								4b
+								0b
+								4b
+								0b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Reduce the damage of your opponent. (White)"
+			tasks: [{
+				id: "36E05C4D19B0A9D9"
+				title: "Weakness"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["07185D45CCB6AC09"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:levitation"
+				}
+			}
+			id: "49A18D0FB601242B"
+			rewards: [{
+				id: "23F64537C1A6CACC"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Levitation\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								5b
+								5b
+								4b
+								0b
+								0b
+								4b
+								0b
+								4b
+								0b
+								2b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Banish your foe to the skys. (Skip spell power when casting) (Blue)"
+			tasks: [{
+				id: "7A7B9F04D0D8275D"
+				title: "Levitation"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["07185D45CCB6AC09"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "zenith:wither"
+				}
+			}
+			id: "3CA763C6D01BA7CF"
+			rewards: [{
+				id: "77BFE66A41D4A516"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Withering\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								5b
+								5b
+								4b
+								1b
+								0b
+								4b
+								0b
+								4b
+								0b
+								1b
+							]
+							start_dir: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Break your enemies down directly. (Black)"
+			tasks: [{
+				id: "66F6495327E32557"
+				title: "Withering"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["07185D45CCB6AC09"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:poison"
+				}
+			}
+			id: "6C55829C273A3665"
+			rewards: [{
+				id: "423DE85705766BC6"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Poison\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								5b
+								5b
+								4b
+								2b
+								0b
+								4b
+								0b
+								4b
+								0b
+								0b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Poison your foes with mystic sickness. (Red)"
+			tasks: [{
+				id: "0AA593E5EFFC7852"
+				title: "Poison"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["07185D45CCB6AC09"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:slowness"
+				}
+			}
+			id: "46AF6082BE8FDF2C"
+			rewards: [{
+				id: "29B17BF4FD60E280"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Slowness\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								5b
+								5b
+								4b
+								2b
+								0b
+								4b
+								0b
+								4b
+								0b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Freeze your enemies still as stone. (Green)"
+			tasks: [{
+				id: "201A00ED74E1BDF2"
+				title: "Slowness"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["03DB9DA4BB72D652"]
+			icon: "minecraft:furnace"
+			id: "7C0D10A9DDAAC567"
+			rewards: [{
+				id: "1EBDF4D0E62053D4"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Smelt\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								5b
+								5b
+								5b
+								0b
+								5b
+								5b
+								4b
+								2b
+								4b
+								2b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Smelt, allows you to smelt whole stacks at a time or even the blocks around you. Spell: [Block Position/Item Entity->Smelt]"
+			tasks: [{
+				id: "67C4C8DD3FB24CA0"
+				title: "Smelt"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["03DB9DA4BB72D652"]
+			icon: "minecraft:ice"
+			id: "52FFE2C8D133F0C4"
+			rewards: [{
+				id: "49F6247D7E8CE081"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Freeze\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								1b
+								1b
+								1b
+								0b
+								1b
+								1b
+								2b
+								4b
+								2b
+								4b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Freeze, turn water to ice and even strengthen ice to stronger forms. Spell: [Block Position->Freeze]"
+			tasks: [{
+				id: "27FA3736B348B4DF"
+				title: "Freeze"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["03DB9DA4BB72D652"]
+			icon: "minecraft:anvil"
+			id: "47FE53E5F30A30F3"
+			rewards: [{
+				id: "682D9778E79084F6"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Falling Block\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								5b
+								0b
+								4b
+								0b
+								5b
+								0b
+								5b
+								0b
+								5b
+								0b
+								5b
+								0b
+								5b
+								0b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Falling Block, make any block affected by gravity. Spell: [Block Position->Falling Block]"
+			tasks: [{
+				id: "671BE30993E0161D"
+				title: "Falling Block"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["03DB9DA4BB72D652"]
+			icon: "minecraft:glass"
+			id: "0927F7797DB9019E"
+			rewards: [{
+				id: "2426E1EEED2AFBDC"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Phase Blocks\"}"
+						}
+						pattern: {
+							angles: [B;
+								2b
+								4b
+								5b
+								5b
+								5b
+								4b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Phase Block, turns blocks invisible, allowing items, but not players to pass through. Spell: [Block Position->Duration of phase->Phase Block]"
+			tasks: [{
+				id: "1BB9D3C22FEC016B"
+				title: "Phase Block"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["03DB9DA4BB72D652"]
+			icon: "minecraft:snowball"
+			id: "362E10095EEA8976"
+			rewards: [{
+				id: "2A27599B0C6EB416"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Alter Scale\"}"
+						}
+						pattern: {
+							angles: [B;
+								2b
+								2b
+								0b
+								2b
+								0b
+								0b
+								2b
+								0b
+								0b
+								2b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Alter Scale, used to change the size of any entity. (Size between 0.03125 and 8) Spell: [Entity->Size Number->Alter Scale]"
+			tasks: [{
+				id: "1BD23D93FA4AC1AC"
+				title: "Alter Scale"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6831F6A301A24ADC"]
+			icon: "minecraft:gunpowder"
+			id: "20AD4EDE0C5F899A"
+			rewards: [{
+				id: "26566DDC27B6431D"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Extinguish\"}"
+						}
+						pattern: {
+							angles: [B;
+								2b
+								2b
+								1b
+								2b
+								0b
+								2b
+								0b
+								2b
+							]
+							start_dir: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Remove fire from an area. [Block Position->Extinguish]"
+			tasks: [{
+				id: "496AD2CD58EB5F21"
+				title: "Extinguish"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["355848A801DB34B0"]
+			icon: "minecraft:spectral_arrow"
+			id: "40770B600959ED30"
+			rewards: [
+				{
+					id: "73AAB55B5A0E4F5D"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Head Position\"}"
+							}
+							pattern: {
+								angles: [B;
+									4b
+									4b
+								]
+								start_dir: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2087D62E6883F506"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Look Direction\"}"
+							}
+							pattern: {
+								angles: [B;
+									0b
+									4b
+								]
+								start_dir: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "First thing to targeting others is figuring out where you looking. Spell: [Self->Head Position->Self->Look Direction]"
+			tasks: [{
+				id: "59350C08CF90EE5D"
+				title: "Advanced Targeting"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["584682244E5204CA"]
+			icon: "minecraft:paper"
+			id: "37B1906C7D69D1B2"
+			rewards: [{
+				id: "658FDB103B9621E5"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"0\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								5b
+								4b
+								4b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Draw this pattern to begin as 0, add more lines to change number. (Direction is relative to previous line) [Sharp Left X2 - Left +5 - Straight +1 - Right +10 - Sharp Right /2]"
+			tasks: [{
+				id: "25512E2BAB98CA5A"
+				title: "Numbers"
+				type: "checkmark"
+			}]
+			x: -8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["40770B600959ED30"]
+			icon: "minecraft:zombie_head"
+			id: "222882F03D23ABA0"
+			rewards: [{
+				id: "6B0A187326A76679"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Entity\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								1b
+								4b
+								5b
+								4b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Put this after previous patterns to target entity you are looking at."
+			tasks: [{
+				id: "0E16974388D9FCF9"
+				title: "Entities"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["40770B600959ED30"]
+			icon: "minecraft:stone"
+			id: "2B55110E2EB6F754"
+			rewards: [{
+				id: "4797869E56AF7A68"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Block\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								5b
+								4b
+								4b
+								0b
+								2b
+								2b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Put this after previous patterns to target block you are looking at."
+			tasks: [{
+				id: "3593686C075CA336"
+				title: "Blocks"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["506ED8861F8F564E"]
+			id: "434AD370CFCBB7D2"
+			subtitle: "You've seen enlightenment, it lies beyond that light, if only you could get close enough to reach through."
+			tasks: [{
+				advancement: "hexcasting:opened_eyes"
+				criterion: ""
+				id: "12471A163215AD94"
+				type: "advancement"
+			}]
+			x: 8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			icon: "minecraft:lava_bucket"
+			id: "680D3A355BA98162"
+			subtitle: "Summons lava at a given position. Spell: [Block Position->Create Lava]"
+			tasks: [{
+				id: "6AB52A6A010099BD"
+				title: "Create Lava"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			id: "1B5AB623B3804325"
+			subtitle: "Zeniths, bless your allies with all manner of buffs. Spell: [Entity->Duration->Strength->Zenith]"
+			tasks: [{
+				id: "40442B39DE5C7B85"
+				title: "Zeniths"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			id: "019545B74A04B4B0"
+			subtitle: "Weather can be manipulated in several ways."
+			tasks: [{
+				id: "4A9F964883845866"
+				title: "Weather Manipulation"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			icon: "minecraft:feather"
+			id: "1CEB6EB0838765C3"
+			subtitle: "Grants creative flight limited in range and duration. Spell: [Entity->Duration->Range->Flight]"
+			tasks: [{
+				id: "31B6BFDB7B0BC77D"
+				title: "Flight"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			icon: "minecraft:ender_pearl"
+			id: "46FC1A2A53C298A7"
+			subtitle: "Teleports entity a given distance. (Coordinate is offset of current location) (WARNING: chance to drop items at end location) Spell: [Entity->Coordinate->Greater Teleport]"
+			tasks: [{
+				id: "31B7DC51FD8E98D9"
+				title: "Greater Teleport"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			icon: {
+				Count: 1b
+				id: "hexcasting:battery"
+				tag: {
+					"hexcasting:media": 2000000
+					"hexcasting:start_media": 2000000
+				}
+			}
+			id: "037B180DB5925813"
+			subtitle: "Infuse media into a bottle to allow usage of amethyst with less waste. (Cast with bottle in offhand) Spell: [Media Entity->Craft Phial]"
+			tasks: [{
+				id: "3DF982AB641B45C7"
+				title: "Craft Phial"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			icon: "spectrum:villager_head"
+			id: "48709F76D5C9A340"
+			subtitle: "Harvest the mind of a villager and infuse it into a block for multiple uses. Spell: [Villager->Block Position->Flay Mind]"
+			tasks: [{
+				id: "304EC320C3CAB62E"
+				title: "Flay Mind"
+				type: "checkmark"
+			}]
+			x: 13.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			icon: "minecraft:clock"
+			id: "24984F5C92249A4C"
+			subtitle: "Increases block action speed for 1 tick. (Not intended for casting by hand) Spell: [Block Position->Accelerate}"
+			tasks: [{
+				id: "502CDA72AB35F0DA"
+				title: "Accelerate"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B5AB623B3804325"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:regeneration"
+				}
+			}
+			id: "2D45E3E268FFF0DA"
+			subtitle: "Heal yourself or allies. (White)"
+			tasks: [{
+				id: "59EA701C6809DAD2"
+				title: "Regeneration"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1B5AB623B3804325"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:night_vision"
+				}
+			}
+			id: "130B6D902C352AB7"
+			subtitle: "See in the dark. (Blue)"
+			tasks: [{
+				id: "3CB584D43F1AAA69"
+				title: "Night Vision"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B5AB623B3804325"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:absorption"
+				}
+			}
+			id: "261B46BE26D6EA4F"
+			subtitle: "Block incoming damage. (Black)"
+			tasks: [{
+				id: "3AB1CB5077A019D8"
+				title: "Absorbtion"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B5AB623B3804325"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:haste"
+				}
+			}
+			id: "42A329DA0D9958D1"
+			subtitle: "Attack and mine faster. (Red)"
+			tasks: [{
+				id: "728475B4FCAF5E35"
+				title: "Haste "
+				type: "checkmark"
+			}]
+			title: "Haste"
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B5AB623B3804325"]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:strength"
+				}
+			}
+			id: "641B0CD7C364DD1E"
+			subtitle: "Boost your damage. (Green)"
+			tasks: [{
+				id: "5C38DCC2285CC194"
+				title: "Strength"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["019545B74A04B4B0"]
+			icon: "minecraft:lightning_rod"
+			id: "79227BC833C88343"
+			subtitle: "Rain lightning down on your foes. Spell: [Block Position->Summon Lightning]"
+			tasks: [{
+				id: "50CE22001F1F8E7E"
+				title: "Summon Lightning"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["019545B74A04B4B0"]
+			icon: "paradise_lost:blue_cloud"
+			id: "280C04F737482C62"
+			subtitle: "Calls rain upon the world. Spell: [Summon Rain]"
+			tasks: [{
+				id: "4DF58E1D77ADD3FD"
+				title: "Summon Rain"
+				type: "checkmark"
+			}]
+			x: 13.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["019545B74A04B4B0"]
+			icon: "paradise_lost:cold_cloud"
+			id: "320DCAC4B0E65161"
+			subtitle: "Clears rain from the world. Spell: [Dispel Rain]"
+			tasks: [{
+				id: "7820BEC6AA3A8326"
+				title: "Dispell Rain"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["584682244E5204CA"]
+			id: "355848A801DB34B0"
+			subtitle: "There are many more complex ways of targeting blocks and entities."
+			tasks: [{
+				id: "498ED907346AF78D"
+				title: "Advanced Targeting"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["355848A801DB34B0"]
+			icon: "frostiful:frost_tipped_arrow"
+			id: "3079E5C51D0C657C"
+			rewards: [{
+				id: "76160AD6B1F54BCC"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Projectile Wisp\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								5b
+								4b
+								1b
+								5b
+								1b
+								1b
+								1b
+								1b
+								1b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Fire a wisp that cast a spell on impact location. Spell: [(Linked Spell)->Summon Position->Direction Fired->Stored Media->Summon Projectile Wisp]"
+			tasks: [{
+				id: "564C2EAE88E676D8"
+				title: "Projectile Wisp"
+				type: "checkmark"
+			}]
+			title: "Summon Projectile Wisp"
+			x: -3.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["355848A801DB34B0"]
+			icon: "botania:light_relay"
+			id: "7603714C66BC44D3"
+			rewards: [{
+				id: "2DF3F986F5401CAE"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Cyclic Wisp\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								5b
+								4b
+								0b
+								1b
+								1b
+								0b
+								4b
+								5b
+								4b
+								0b
+								1b
+								1b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Once summoned cyclic wisps will cast their spells 20 times per second. Spell: [(Linked Spell)->Summon Position->Stored Media->Summon Cyclic Wisp]"
+			tasks: [{
+				id: "1DBBBFB943EFCD9C"
+				title: "Cyclic Wisp"
+				type: "checkmark"
+			}]
+			title: "Summon Cyclic Wisp"
+			x: 0.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["4CC5C9D78C27C7EE"]
+			icon: "minecraft:end_portal_frame"
+			id: "56D3844D4C342341"
+			subtitle: "Required for the casting of all gate spell. Spell: [Gates Reflection->Write]"
+			tasks: [{
+				id: "55F322AE81AE5191"
+				title: "Create Gate"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56D3844D4C342341"]
+			id: "146105F7DC7DA0B2"
+			rewards: [{
+				id: "43AC0742C1627D4F"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Link Gate\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								4b
+								5b
+								1b
+								1b
+								2b
+								1b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Target entity to be pulled to gate. Spell: [Read(Gate)->Entity->Link Gate]"
+			tasks: [{
+				id: "619FA0EF05234A3C"
+				title: "Link to Gate"
+				type: "checkmark"
+			}]
+			title: "Link Gate"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56D3844D4C342341"]
+			id: "3591AD7BD0C6634D"
+			rewards: [{
+				id: "518B7E091018B258"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Close Gate\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								0b
+								0b
+								5b
+								5b
+								5b
+								0b
+								5b
+								5b
+								4b
+								0b
+								2b
+								1b
+								2b
+								0b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Pulls targeted entity to given position. Spell: [Read(Gate)->Block Position->Close Gate]"
+			tasks: [{
+				id: "1437E5C82CDD45F9"
+				title: "Close gate"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48709F76D5C9A340"]
+			id: "22EE96684F695024"
+			subtitle: "Mote nexus allows the storage of a large amount of items. Made by mind flaying a shulker box. This can be accessed across any range or dimension. (Requires apprentice or greater cartographer)"
+			tasks: [{
+				id: "1D150F9A990F75A9"
+				item: "hexal:mediafied_storage"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["48709F76D5C9A340"]
+			id: "639486DE66784DA4"
+			rewards: [{
+				id: "7510F02CDA34FD2B"
+				item: {
+					Count: 1b
+					id: "hexcasting:battery"
+					tag: {
+						"hexcasting:media": 64000000
+						"hexcasting:start_media": 64000000
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Akashic record can be made when mind flaying akashic ligature. (Target this when using library spells) (Requires master librarian)"
+			tasks: [{
+				id: "64C5BF28B8D7ADEA"
+				item: "hexcasting:akashic_record"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["639486DE66784DA4"]
+			id: "19630585DE204890"
+			subtitle: "Can be used to extend range of akashic library."
+			tasks: [{
+				id: "4AAB5CE774F29D5C"
+				item: "hexcasting:akashic_connector"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["639486DE66784DA4"]
+			id: "2C1701D5EAF8AB9A"
+			subtitle: "Akashic bookshelf can be used to hold iotas of information. (Click with empty scroll to copy) (Shift click with empty hand to clear)"
+			tasks: [{
+				id: "1C21379D1594EB95"
+				item: "hexcasting:akashic_bookshelf"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["48709F76D5C9A340"]
+			icon: "minecraft:budding_amethyst"
+			id: "564AE50E60E60650"
+			subtitle: "Mind flay can be used on amethyst blocks to convert them to budding amethyst. (Requires Journyman or greater villager)"
+			tasks: [{
+				id: "07EE87ED3D62A787"
+				item: "minecraft:amethyst_block"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["48709F76D5C9A340"]
+			id: "77B854BA45105594"
+			subtitle: "Empty impetuses can be used to direct flow of media or mind flayed to control the activation of spell circles. (Details can be read using scrying lens) (Fueled through hoppers or other such devices)"
+			tasks: [{
+				id: "03DEE1F5F70DD770"
+				item: "hexcasting:empty_impetus"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["77B854BA45105594"]
+			id: "6BE3A42770E3AC81"
+			subtitle: "Toolsmith impetus activates when right clicked. (Requires apprentice or greater toolsmith)"
+			tasks: [{
+				id: "37A450C605EF8BC1"
+				item: "hexcasting:impetus_rightclick"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["77B854BA45105594"]
+			id: "541970D83860912F"
+			subtitle: "Fletcher impetus activates when looked at briefly. (Requires apprentice or greater fletcher)"
+			tasks: [{
+				id: "6919FF0D4C22B4E7"
+				item: "hexcasting:impetus_look"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["77B854BA45105594"]
+			id: "239191C1B1925892"
+			subtitle: "Cleric impetus activates when recieving redstone input. (Requires apprentice or greater cleric) (Must be linked linked to player using focus or similar device) (Can interact with range around player in addtion to circles range)"
+			tasks: [{
+				id: "4CD4E05B2DAD0CE6"
+				item: "hexcasting:impetus_storedplayer"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["48709F76D5C9A340"]
+			id: "7374ABD5F3A49DFF"
+			subtitle: "Empty directrixes can be mind flayed to alter the order of spell circles."
+			tasks: [{
+				id: "68EC3601C0402D4E"
+				item: "hexcasting:empty_directrix"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7374ABD5F3A49DFF"]
+			id: "1F3BE296F4931032"
+			subtitle: "Mason directrix sends spell order in two directions depending on redstone signal. (Requires novice or greater mason)"
+			tasks: [{
+				id: "0F197B547B9101A8"
+				item: "hexcasting:directrix_redstone"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["639486DE66784DA4"]
+			id: "0FB552563698CB7B"
+			subtitle: "Akashic libraries can be used to store and access stored iota using keys."
+			tasks: [{
+				id: "0C4B138D6667946C"
+				type: "checkmark"
+			}]
+			title: "Akashic Spells"
+			x: 10.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"239191C1B1925892"
+				"6BE3A42770E3AC81"
+				"541970D83860912F"
+			]
+			dependency_requirement: "one_completed"
+			id: "3C6879D6071E0900"
+			subtitle: "Spell circles can be used for casting larger scale magics. (Range limited to range of circle) (Slates must loop back to starting impetus) (Blank slates can be used to connect spell) (Write patterns onto slates to assemble spell)"
+			tasks: [{
+				count: 6L
+				id: "14991694BA5D2ACD"
+				item: "hexcasting:slate"
+				type: "item"
+			}]
+			title: "Spell Circles"
+			x: 19.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["355848A801DB34B0"]
+			icon: "minecraft:compass"
+			id: "1B4E0C5C493691DA"
+			subtitle: "Basic sentinels can be summoned so that its location can be accesed later. (Limited to 1 active sentinel)"
+			tasks: [{
+				id: "563C0FA417339CCE"
+				title: "Sentinals"
+				type: "checkmark"
+			}]
+			title: "Sentinels"
+			x: 2.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["1B4E0C5C493691DA"]
+			id: "1F85285CEA50F42A"
+			rewards: [
+				{
+					id: "0134F137CB9B9A36"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Summon Sentinel\"}"
+							}
+							pattern: {
+								angles: [B;
+									0b
+									4b
+									1b
+									4b
+									0b
+									4b
+									1b
+								]
+								start_dir: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3015534D024824CB"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Banish Sentinel\"}"
+							}
+							pattern: {
+								angles: [B;
+									5b
+									2b
+									0b
+									2b
+									5b
+									2b
+									0b
+								]
+								start_dir: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Used for the summoning and removal of sentinels. Spells: [Block Position->Summon Sentinel] [Banish Sentinel]"
+			tasks: [{
+				id: "02F79A66B9708BE7"
+				title: "Sentinal Manipulation"
+				type: "checkmark"
+			}]
+			title: "Sentinel Manipulation"
+			x: 4.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["1B4E0C5C493691DA"]
+			id: "46558469E30BE1B1"
+			rewards: [
+				{
+					id: "0AE314D0280B47EF"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Locate Sentinel\"}"
+							}
+							pattern: {
+								angles: [B;
+									0b
+									4b
+									1b
+									4b
+									0b
+									4b
+									1b
+									2b
+									1b
+								]
+								start_dir: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00574E6F4925EECF"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Wayfind Sentinel\"}"
+							}
+							pattern: {
+								angles: [B;
+									0b
+									4b
+									1b
+									4b
+									0b
+									4b
+									1b
+									2b
+									0b
+									4b
+								]
+								start_dir: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Used to find position or relative position of your sentinel. Spells: [Locate Sentinel] [Block Postion->Wayfind Sentinel]"
+			tasks: [{
+				id: "0518399D3FD8842F"
+				title: "Sentinal Tracking"
+				type: "checkmark"
+			}]
+			title: "Sentinel Tracking"
+			x: 4.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0FB552563698CB7B"]
+			icon: "minecraft:writable_book"
+			id: "17903DCD50112613"
+			rewards: [{
+				id: "51C0877045D2272A"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Write (Library)\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								1b
+								1b
+								0b
+								1b
+								1b
+								1b
+								1b
+								1b
+								2b
+								1b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Notes information to bookshelf. Spell: [Record Positon->Single->Custom Key->(Stored information)->Write to Library]"
+			tasks: [{
+				id: "39FB2BCAD2E543DD"
+				title: "Write to Library"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0FB552563698CB7B"]
+			icon: "minecraft:written_book"
+			id: "6A2AA231CFEA14F7"
+			rewards: [{
+				id: "51535A4A22046658"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Read (Library)\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								0b
+								5b
+								5b
+								5b
+								5b
+								5b
+								4b
+								5b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Reads information from bookshelf. Spell: [Record Position->Single->Custom Key->Read from Library]"
+			tasks: [{
+				id: "0F8D104E7DBF397B"
+				title: "Read from Library"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0FB552563698CB7B"]
+			id: "6D4E3512BD4FF66B"
+			subtitle: "Once you've made an akashic library you unlock access to your everbook. An information storage that works across worlds and allows for the creation of custom patterns."
+			tasks: [{
+				id: "2DFA74EAEBE535DF"
+				title: "Everbook Spells"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["6D4E3512BD4FF66B"]
+			id: "4F97B71342195ABE"
+			rewards: [{
+				id: "0CD7CC238F2D8317"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Read from Everbook\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								0b
+								1b
+								1b
+								1b
+								0b
+								1b
+								2b
+								5b
+								2b
+								1b
+								2b
+								2b
+								0b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Reads pattern from everbook. Will also write pattern to library. Spell: [Record Position->Single->Custom Key->Read from Everbook]"
+			tasks: [{
+				id: "74B87415D890BCD1"
+				title: "Read from Everbook"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["6D4E3512BD4FF66B"]
+			id: "7DCBD31841A0F7BD"
+			rewards: [{
+				id: "6825F48A4B489A82"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Write to Everbook\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								0b
+								5b
+								5b
+								5b
+								0b
+								5b
+								4b
+								1b
+								4b
+								5b
+								4b
+								4b
+								0b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Writes a pattern form library to everbook. Spell: [Record Positon->Single->Custom Key->Write to Everbook]"
+			tasks: [{
+				id: "33527BD3A6E6E869"
+				title: "Write to Everbook"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["6D4E3512BD4FF66B"]
+			id: "5C0F20CB588BF7E5"
+			rewards: [{
+				id: "3EE77C0F867A6101"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Clear Everbook\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								0b
+								5b
+								5b
+								5b
+								0b
+								5b
+								4b
+								0b
+								0b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Clears pattern from your everbook. Spell: [Single->Custom Key->Clear Everbook]"
+			tasks: [{
+				id: "3F7E0439BC67CEA5"
+				title: "Clear from Everbook"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["6D4E3512BD4FF66B"]
+			id: "19FDC6477896BB0F"
+			rewards: [{
+				id: "65BDA22B9F9C2AE1"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Make Custom Pattern\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								0b
+								1b
+								1b
+								1b
+								0b
+								1b
+								2b
+								0b
+								0b
+							]
+							start_dir: 3b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Converts key to be accessable with only one pattern. Spell: [Single->Custom Key->Make Custom Pattern]"
+			tasks: [{
+				id: "593C83C093550DC7"
+				title: "Make Custom Pattern"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["1B4E0C5C493691DA"]
+			id: "4E03740BA3F67D98"
+			subtitle: "Work similarly to normal sentinal but allows you to interact with a range around your sentinel as well."
+			tasks: [{
+				id: "07C55E6B274AA5D1"
+				title: "Great Sentinal"
+				type: "checkmark"
+			}]
+			title: "Great Sentinel"
+			x: 4.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["22EE96684F695024"]
+			id: "50B8ED330F028B50"
+			rewards: [{
+				id: "16BB6FBB2CF6DE7B"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Bind Nexus\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								4b
+								5b
+								0b
+								5b
+								4b
+								5b
+								0b
+								5b
+								4b
+								5b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Links yourself to a nexus to use all further spells. Spell: [Mote Nexus Position->Bind Nexus]"
+			tasks: [{
+				id: "33D809FB5B259C53"
+				title: "Link Nexus"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["50B8ED330F028B50"]
+			id: "2E190AA73E428E8B"
+			rewards: [{
+				id: "512AEEAAB1C58189"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Store\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								4b
+								5b
+								4b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Stores item within the nexus. Spell: [Item Entity->Store]"
+			tasks: [{
+				id: "23362E682E14FF01"
+				title: "Store Item"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7959754AD49BC3F9"]
+			id: "445F5E6F2653F8AA"
+			rewards: [{
+				id: "062A7849A7E54AF4"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Retrieve\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								2b
+								1b
+								2b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Retrieves item from nexus. [Mote Item->Drop Position->Retrieve]"
+			tasks: [{
+				id: "1D4115DFC99A6D98"
+				title: "Retrieve Item"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["50B8ED330F028B50"]
+			id: "7959754AD49BC3F9"
+			rewards: [
+				{
+					id: "351994B5D6351F6E"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Item Type List\"}"
+							}
+							pattern: {
+								angles: [B;
+									2b
+									0b
+									5b
+									5b
+									5b
+									5b
+									5b
+									0b
+									2b
+									2b
+									0b
+									0b
+								]
+								start_dir: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "026276C03BBE6256"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Select\"}"
+							}
+							pattern: {
+								angles: [B;
+									2b
+									1b
+									1b
+									1b
+									2b
+								]
+								start_dir: 5b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AAA766DC4AE0AF3"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Mote List\"}"
+							}
+							pattern: {
+								angles: [B;
+									4b
+									0b
+									1b
+									1b
+									1b
+									1b
+									1b
+									0b
+									4b
+									4b
+									0b
+									0b
+								]
+								start_dir: 2b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "49BB3B4C25C05CED"
+					item: {
+						Count: 1b
+						id: "hexcasting:scroll"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Mote Select\"}"
+							}
+							pattern: {
+								angles: [B;
+									5b
+									0b
+									4b
+									1b
+									4b
+									0b
+									5b
+								]
+								start_dir: 5b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Select items from nexus through entering the number of the item type from the list. (List Starts at 0) Spell: [Item Type List->Item Number->Select->Mote List->Mote Select]"
+			tasks: [{
+				id: "2EA454EE215DAC73"
+				title: "Selecting mote items. "
+				type: "checkmark"
+			}]
+			title: "Selecting Mote Items"
+			x: 16.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["3F38B088FFD88DA1"]
+			icon: "hexcasting:uuid_colorizer"
+			id: "07CDD028F501C778"
+			rewards: [{
+				id: "12778883E10AA679"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Activate Pigment\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								0b
+								2b
+								2b
+								0b
+								5b
+								4b
+								0b
+								5b
+								0b
+								4b
+								0b
+								5b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Pigments can be used to change the color of your magic. (Hold in offhand) Spell: [Activate Pigment]"
+			tasks: [{
+				id: "2FA5B50158449A76"
+				title: "Pigments can be used to change the color of your magic. (Hold pigment in offhand) Spell:"
+				type: "checkmark"
+			}]
+			title: "Pigments"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7959754AD49BC3F9"]
+			icon: "minecraft:crafting_table"
+			id: "32209112BC13BCF7"
+			rewards: [{
+				id: "5A4754EA31783B54"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Craft\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								0b
+								4b
+								0b
+								2b
+								1b
+								2b
+								0b
+								4b
+								0b
+								2b
+								1b
+								0b
+								0b
+								2b
+								0b
+								4b
+								5b
+								4b
+								0b
+								2b
+								0b
+								0b
+								1b
+								2b
+								0b
+								4b
+								0b
+								2b
+								1b
+								2b
+								0b
+								4b
+								0b
+								0b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Craft items directly from stored motes. Select motes in recipie order, use null to indicate blank slots. Spell: [Mote/Mote List->Craft]"
+			tasks: [{
+				id: "62E728DE9308A02E"
+				title: "Craft from Nexus"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["7959754AD49BC3F9"]
+			icon: "minecraft:emerald"
+			id: "4992A775E74C1421"
+			rewards: [{
+				id: "19E82BBE82337640"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Trade\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								0b
+								2b
+								1b
+								2b
+								0b
+								4b
+								1b
+								5b
+								2b
+								1b
+								2b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Trade items directly from nexus. Spells: [Mote/Mote List->Trade] [Mote/Mote List->Trade Number(Optional)->Trade]"
+			tasks: [{
+				id: "145ECC39973B58C5"
+				title: "Trade from Nexus"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["355848A801DB34B0"]
+			id: "162A0CF226A217E7"
+			subtitle: "Destroys a wisp, if cast by another wisp transfers some of the media over. Spell: [Wisp Entity->Consume Wisp]"
+			tasks: [{
+				id: "5D538C6EE4781F72"
+				title: "Consume Wisp"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["355848A801DB34B0"]
+			id: "4079FBF4A0829C03"
+			subtitle: "Binds wisp to self. Bound wisp has increased range and decreased upkeep. (May only have one bound wisp at a time) Spell: [Wisp Entity->Bind Wisp]"
+			tasks: [{
+				id: "159CF881C3F49D9A"
+				title: "Bind Wisp"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"4079FBF4A0829C03"
+				"162A0CF226A217E7"
+			]
+			dependency_requirement: "one_completed"
+			id: "2611D3AA6D4EC64D"
+			subtitle: "A wisp is able to be linked to players or other wisps. This allows for the transfer of iotas between linked parties."
+			tasks: [{
+				id: "06865A532C5E54AF"
+				title: "Linking of Wisps"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -18.5d
+		}
+		{
+			dependencies: ["2611D3AA6D4EC64D"]
+			id: "0B129F911169C02B"
+			rewards: [{
+				id: "204A5426C71D3BAB"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Link Wisp\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								4b
+								5b
+								4b
+								4b
+								1b
+								5b
+								5b
+								5b
+								5b
+								5b
+								4b
+								0b
+								1b
+								4b
+								5b
+								4b
+								4b
+								0b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Links wisp to caster. (Assigns number by order links starting at 0) Spell: [Wisp Entity->Link Wisp]"
+			tasks: [{
+				id: "518FA38FEC1D6D3E"
+				title: "Link Wisp"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["2611D3AA6D4EC64D"]
+			id: "459E8B1B73EDDB0C"
+			rewards: [{
+				id: "37725D11269D9A6E"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Unlink Wisp\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								2b
+								1b
+								2b
+								2b
+								5b
+								1b
+								1b
+								1b
+								1b
+								1b
+								2b
+								0b
+								5b
+								2b
+								1b
+								2b
+								2b
+								0b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Unlinks a wisp from a caster. (Starts with 0) Spell: [Link Number->Unlink Wisp]"
+			tasks: [{
+				id: "06559D20DA0152A8"
+				title: "Unlink Wisp"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -20.0d
+		}
+		{
+			dependencies: ["2611D3AA6D4EC64D"]
+			id: "04609DA7CFBF065E"
+			rewards: [{
+				id: "7EE7E44C14C69E05"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Send Iota\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								5b
+								5b
+								0b
+								2b
+								1b
+								2b
+								2b
+								0b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Sends iota to linked wisp. Spell: [Link Number->Iota->Send Iota]"
+			tasks: [{
+				id: "41F26224053E118B"
+				title: "Send Iota"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -21.0d
+		}
+		{
+			dependencies: ["2611D3AA6D4EC64D"]
+			id: "5C2AE82017374152"
+			rewards: [{
+				id: "591823C1251D4D80"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Recieve Iota\"}"
+						}
+						pattern: {
+							angles: [B;
+								0b
+								1b
+								1b
+								1b
+								1b
+								1b
+								0b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Recieves a sent iota. Spell: [Recieve Iota]"
+			tasks: [{
+				id: "4E2426DE1B95BDBD"
+				title: "Recieve Iota"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -20.0d
+		}
+		{
+			dependencies: ["66871DE42BBE2217"]
+			icon: "minecraft:note_block"
+			id: "139FDDE729C85F0C"
+			rewards: [{
+				id: "54BEFD0553DB9E8E"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Note\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								2b
+								4b
+								4b
+							]
+							start_dir: 4b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Plays a musical note. (Find numbers by using scrying lense on note block) Spell: [Block Position->Instrument Number->Note Number->Note]"
+			tasks: [{
+				id: "662889364FB098A5"
+				title: "Note"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2471D6BFAAA409B3"]
+			id: "560FDB1A93AC0B8F"
+			rewards: [{
+				id: "00524C7617104987"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Erase\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								2b
+								5b
+								4b
+								0b
+								0b
+								4b
+								0b
+								0b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Clears info off of any written item. (Hold in offhand) Spell: [Erase]"
+			tasks: [{
+				id: "61323147E1C4902E"
+				title: "Erase"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2471D6BFAAA409B3"]
+			id: "12D91B7A681D73B8"
+			rewards: [{
+				id: "741B9F45DF3312B7"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Recharge\"}"
+						}
+						pattern: {
+							angles: [B;
+								5b
+								5b
+								5b
+								5b
+								5b
+								0b
+								4b
+								1b
+								4b
+								1b
+								4b
+								1b
+								4b
+								1b
+								4b
+								1b
+								4b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Recharges an artifact, trinket or phial. (Hold in offhand) Spell: [Media Entity->Recharge]"
+			tasks: [{
+				id: "69A92B969A9439CA"
+				title: "Recharge"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["03DB9DA4BB72D652"]
+			id: "00F134697CB7DEA1"
+			rewards: [{
+				id: "543FAD7E4AD77292"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Particles\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								5b
+								5b
+								5b
+								5b
+								4b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Spawns a singular or line of particles. Spell: [Position/Position List->Particles]"
+			tasks: [{
+				id: "79E233E0B85D8649"
+				title: "Particles"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["355848A801DB34B0"]
+			id: "630CBB53F8A89F59"
+			rewards: [{
+				id: "618018330AB9DFDB"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Wisp Self\"}"
+						}
+						pattern: {
+							angles: [B;
+								2b
+								1b
+								2b
+								0b
+								5b
+								5b
+								0b
+								2b
+								1b
+								2b
+								0b
+								5b
+								5b
+								4b
+								0b
+							]
+							start_dir: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Used within wisp to target itself."
+			tasks: [{
+				id: "5E3A28E80891157B"
+				title: "Wisp Self"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["630CBB53F8A89F59"]
+			id: "51A1A57C5A29A245"
+			rewards: [{
+				id: "090F09D1295C4096"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Wisp Charge\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								5b
+								4b
+								0b
+								1b
+								1b
+								0b
+								4b
+								5b
+								4b
+								0b
+								1b
+								1b
+								2b
+								0b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Used by wisp to read it's own remaining media."
+			tasks: [{
+				id: "4CD8E8E52263E374"
+				title: "Wisp Charge"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["50B8ED330F028B50"]
+			id: "01C1BDDDA3C1DF0B"
+			rewards: [{
+				id: "77E991BBF428C6E5"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Nexus Storage\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								0b
+								1b
+								2b
+								5b
+								2b
+								1b
+								0b
+								4b
+							]
+							start_dir: 2b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Reads how many free slots are left in your linked nexus. Spell: [Nexus Storage]"
+			tasks: [{
+				id: "023B0E0CA4720B3F"
+				title: "Inventory"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["50B8ED330F028B50"]
+			id: "710E5D28AA15FF75"
+			rewards: [{
+				id: "0F06DB9846898E76"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Combine Mote\"}"
+						}
+						pattern: {
+							angles: [B;
+								4b
+								5b
+								4b
+								1b
+								5b
+								2b
+								1b
+								2b
+							]
+							start_dir: 5b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Allows merging of motes to sizes beyond normal stack limits. Spell: [Mote->Mote->Combine Mote]"
+			tasks: [{
+				id: "604BA35FA9778F7C"
+				title: "Combine Motes"
+				type: "checkmark"
+			}]
+			x: 18.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["50B8ED330F028B50"]
+			id: "66186B30ECCD79AA"
+			rewards: [{
+				id: "4AE92D0E411E9903"
+				item: {
+					Count: 1b
+					id: "hexcasting:scroll"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Split Mote\"}"
+						}
+						pattern: {
+							angles: [B;
+								1b
+								4b
+								5b
+								4b
+								4b
+								0b
+							]
+							start_dir: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Seperate motes into multiple stacks. Spell: [Mote->Split Amount->Split Mote]"
+			tasks: [{
+				id: "725158DC061008F8"
+				title: "Split Mote"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: -13.0d
+		}
+	]
+	title: "&d Hex Casting"
+}

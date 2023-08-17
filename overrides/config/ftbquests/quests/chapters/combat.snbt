@@ -1,0 +1,1713 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "combat"
+	group: "3E586F2160161EEA"
+	icon: {
+		Count: 1b
+		id: "simplyswords:iron_rapier"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "560CECC59DBCDA6E"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "merchantmarkers:textures/entity/villager/markers/wizards__wizard_merchant.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "merchantmarkers:textures/entity/villager/markers/fletcher.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.078869047619044d
+			y: -4.128571428571426d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "better_bone_meal:textures/item_blue.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.095238095238088d
+			y: -1.904761904761905d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "prominent:textures/text/melee.png"
+			rotation: 0.0d
+			width: 3.8d
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "prominent:textures/text/ranged.png"
+			rotation: 0.0d
+			width: 3.8d
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "meadow:item/hunting_bow_pulling2"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:item/iron_sword"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "indrev:textures/gui/shield_icon.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "wizards:item/staff_arcane"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -6.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "60F3ED1DB095C177"
+			optional: true
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "Get a sword or bow"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "47DD429F3413A21C"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "c:swords"
+						}
+					}
+					title: "Get a sword"
+					type: "item"
+				}
+				{
+					id: "6B4F78F693D244A3"
+					item: {
+						Count: 1b
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&c&lOffensiveness"
+			x: 0.0d
+			y: -1.875d
+		}
+		{
+			id: "2CCD30451FA8C63D"
+			optional: true
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "Get or make a shield"
+			tasks: [{
+				id: "2418850D2DD94A66"
+				item: {
+					Count: 1b
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&3&lDefensiveness"
+			x: 0.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["60F3ED1DB095C177"]
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A38CC4448642FAF"
+			shape: "diamond"
+			subtitle: "Get an &eIron axe&r. &eThese are &cBurst Damage&e focused."
+			tasks: [{
+				id: "68FB8899383405BD"
+				item: {
+					Count: 1b
+					id: "minecraft:iron_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c&lBerserker's Path"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2CCD30451FA8C63D"]
+			id: "2D01683D97530E94"
+			rewards: [{
+				id: "6B6858A1FFB1566A"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Make iron armor. Heavy armor is oriented to be used in melee combat. &eThere are tons of different armor sets to choose from!&r Each one with their own benefits, so explore them and choose one that fits your style!"
+			tasks: [
+				{
+					id: "3EEDFB9642B10CE8"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CFD9900522FBF20"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1612A13BDD314F98"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "33DA048A526F6DF7"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&eHeavy:&c Warrior's Path"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2CCD30451FA8C63D"]
+			id: "4DA06F47E69F5AE8"
+			subtitle: "Make wizard robes. Light armor is usually oriented to be used for casting, alchemy or other ranged options, depending on the armor type."
+			tasks: [
+				{
+					id: "28E02D26C769FEBC"
+					item: {
+						Count: 1b
+						id: "wizards:wizard_robe_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7871A31AB8B522B3"
+					item: {
+						Count: 1b
+						id: "wizards:wizard_robe_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "234E0D8AE289A423"
+					item: {
+						Count: 1b
+						id: "wizards:wizard_robe_legs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DF4BB9956728B04"
+					item: {
+						Count: 1b
+						id: "wizards:wizard_robe_feet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&eLightweight:&a Wizard's Path"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["43186F903AE7AEF5"]
+			id: "29113DC421F3CC39"
+			rewards: [{
+				id: "3B5FC25237E4B2B7"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "pentagon"
+			size: 1.1d
+			subtitle: "Get one of the three basic Wizard Spellblades. Casting while fighting in melee range."
+			tasks: [{
+				id: "26BA838519D52C9B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "spellbladenext:basic_staves"
+					}
+				}
+				title: "Get a Spellblade"
+				type: "item"
+			}]
+			title: "&dWizard's Path: &eMelee"
+			x: 0.6326530612244952d
+			y: -5.19047619047619d
+		}
+		{
+			dependencies: ["60F3ED1DB095C177"]
+			icon: {
+				Count: 1b
+				id: "simplyswords:iron_greathammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2BFC7CBB54AAB1B9"
+			shape: "diamond"
+			subtitle: "Get an &eIron Greathammer&r. &eThese are &cCombo damage&e focused."
+			tasks: [{
+				id: "40B8E44E51B0A129"
+				item: {
+					Count: 1b
+					id: "simplyswords:iron_greathammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&4&lBrute's Path"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["60F3ED1DB095C177"]
+			icon: {
+				Count: 1b
+				id: "minecraft:bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E4EF0C3DC6713FC"
+			rewards: [{
+				id: "5A531E1A9FAE984C"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Get a bow and arrow."
+			tasks: [
+				{
+					id: "1D7674B34F25F8EE"
+					item: {
+						Count: 1b
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "722DDA7939A13926"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+			]
+			title: "&2&lHunter's Path"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["43186F903AE7AEF5"]
+			id: "17F759029CB990F0"
+			rewards: [{
+				id: "5DB38174D0B61091"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "pentagon"
+			size: 1.1d
+			subtitle: "Get one of the three basic Wizard Wands. Faster casts with less power. Doesn't require a Spell Binding Table"
+			tasks: [{
+				id: "31F86E9DEED0A520"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "wizards:basic_wands"
+					}
+				}
+				title: "Get an elemental wand"
+				type: "item"
+			}]
+			title: "&dWizard's Path: &9Ranged (Wands)"
+			x: -0.6326530612244952d
+			y: -5.210884353741498d
+		}
+		{
+			dependencies: ["60F3ED1DB095C177"]
+			id: "43B304A5723520A8"
+			rewards: [{
+				id: "497054CEE6B72A0B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			shape: "diamond"
+			subtitle: "Get an &eIron Sword&r and &eIron Sai&r. &eThese are &cDPS&e Focused."
+			tasks: [
+				{
+					id: "1D703CF16BB40012"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CA4FA7653CE21D9"
+					item: {
+						Count: 1b
+						id: "simplyswords:iron_sai"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&6&lAssasin's Path"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5E4EF0C3DC6713FC"]
+			id: "66F3C019DED5B416"
+			subtitle: "Become a dragon hunter, obtain the &eDragon Bow&r"
+			tasks: [{
+				id: "661611C851009298"
+				item: {
+					Count: 1b
+					id: "dragonloot:dragon_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Dragon Hunter's Bow"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "465F82974BAC70FD"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "170F6196C9A94216"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&2&lThe Prominent Hunter's Bow"
+			x: -5.03125d
+			y: -4.128571428571426d
+		}
+		{
+			dependencies: ["17F759029CB990F0"]
+			id: "6C22397E4A2BCC96"
+			rewards: [{
+				id: "2D974D202D3159B0"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "3B78004F1679620A"
+				item: {
+					Count: 1b
+					id: "wizards:wand_netherite_arcane"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&dArcane Mastery:&9 Wand"
+			x: -0.8999999999999999d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17F759029CB990F0"]
+			id: "5CA44FFE0C7D71FD"
+			rewards: [{
+				id: "33EC7517303D5FCE"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "5E6BC52AEA673A17"
+				item: {
+					Count: 1b
+					id: "wizards:wand_netherite_fire"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&cFire Mastery:&9 Wand"
+			x: -1.5d
+			y: -5.3999999999999995d
+		}
+		{
+			dependencies: ["17F759029CB990F0"]
+			id: "5E39F3AC9B1E1AF4"
+			rewards: [{
+				id: "4C1CF5E69DCE189D"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "738EC55AFFEC92AD"
+				item: {
+					Count: 1b
+					id: "wizards:wand_netherite_frost"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&bFrost Mastery:&9 Wand"
+			x: -1.2d
+			y: -5.7d
+		}
+		{
+			dependencies: ["4DA06F47E69F5AE8"]
+			id: "2CC4725236A1626B"
+			rewards: [{
+				id: "0F8A34ACED45E8F2"
+				type: "xp"
+				xp: 15
+			}]
+			size: 0.6d
+			tasks: [
+				{
+					id: "4614CE0ABC672544"
+					item: {
+						Count: 1b
+						id: "wizards:frost_robe_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "467A9BF94E0986BF"
+					item: {
+						Count: 1b
+						id: "wizards:frost_robe_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20AFF081E3354B70"
+					item: {
+						Count: 1b
+						id: "wizards:frost_robe_legs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "738FE0AC5EFB4505"
+					item: {
+						Count: 1b
+						id: "wizards:frost_robe_feet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&bFrost Mastery"
+			x: 0.0d
+			y: 3.3d
+		}
+		{
+			dependencies: ["4DA06F47E69F5AE8"]
+			id: "5B7085F5059B0BAA"
+			rewards: [{
+				id: "0FEC549F6C5AC77A"
+				type: "xp"
+				xp: 15
+			}]
+			size: 0.6d
+			tasks: [
+				{
+					id: "230D3FD33C5CE65C"
+					item: {
+						Count: 1b
+						id: "wizards:arcane_robe_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B7856C369E16578"
+					item: {
+						Count: 1b
+						id: "wizards:arcane_robe_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1956C1F84EB936DA"
+					item: {
+						Count: 1b
+						id: "wizards:arcane_robe_legs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03635500E54977F0"
+					item: {
+						Count: 1b
+						id: "wizards:arcane_robe_feet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&dArcane Mastery"
+			x: 0.6d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4DA06F47E69F5AE8"]
+			id: "0522FC23F73143B4"
+			rewards: [{
+				id: "1B0125E4B9994C80"
+				type: "xp"
+				xp: 15
+			}]
+			size: 0.6d
+			tasks: [
+				{
+					id: "68ACF35C9B55D8AB"
+					item: {
+						Count: 1b
+						id: "wizards:fire_robe_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A9F97468959D996"
+					item: {
+						Count: 1b
+						id: "wizards:fire_robe_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "273B26759D058B90"
+					item: {
+						Count: 1b
+						id: "wizards:fire_robe_legs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7DB89488CBC0784B"
+					item: {
+						Count: 1b
+						id: "wizards:fire_robe_feet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&cFire Mastery"
+			x: -0.6d
+			y: 3.0d
+		}
+		{
+			dependencies: ["60F3ED1DB095C177"]
+			id: "67F6373B6563BA26"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "22D03850813056F2"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			subtitle: "Get a &cFire&r, &9Water&r, or &eEarth&r Archon wand. Make quick casts at the expense of your mana."
+			tasks: [
+				{
+					id: "7D3F11D7122C993A"
+					item: {
+						Count: 1b
+						id: "archon:fire_wand"
+						tag: {
+							archon: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "547029F826AE5716"
+					item: {
+						Count: 1b
+						id: "archon:water_wand"
+						tag: {
+							archon: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "645C3A575C0D6B39"
+					item: {
+						Count: 1b
+						id: "archon:earth_wand"
+						tag: {
+							archon: { }
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&b&lArchon's Sorcerer"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "76A49B3247C616BF"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "276995005B99DC23"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&b&lThe Prominent Wizard's Staff"
+			x: -5.056547619047606d
+			y: -1.8904761904761855d
+		}
+		{
+			dependencies: ["43B304A5723520A8"]
+			id: "46D23DED41B8482C"
+			tasks: [{
+				id: "54753F55314FBF42"
+				item: {
+					Count: 1b
+					id: "simplyswords:diamond_sai"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&e&lTier I:&r Diamond Sai"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["46D23DED41B8482C"]
+			id: "6C63259A27B31180"
+			rewards: [
+				{
+					id: "0A3B6219CABA3253"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "45DA1EE24D34EAF8"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "farmersdelight:backstabbing"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "312EE99B3CF49602"
+				item: {
+					Count: 1b
+					id: "simplyswords:runic_sai"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6&lTier II:&r Runic Sai"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["43B304A5723520A8"]
+			id: "3F841B26A7AB06AD"
+			tasks: [{
+				id: "062FF48BE2F95ADB"
+				item: {
+					Count: 1b
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&e&lTier I:&r Diamond Sword"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A38CC4448642FAF"]
+			id: "378A0B927C63B7E1"
+			tasks: [{
+				id: "782F418EC80406E5"
+				item: {
+					Count: 1b
+					id: "minecraft:diamond_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&e&lTier I:&r Diamond Axe"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BFC7CBB54AAB1B9"]
+			id: "4C5C59470EF4B066"
+			tasks: [{
+				id: "11A9AFF710608793"
+				item: {
+					Count: 1b
+					id: "simplyswords:diamond_greathammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&e&lTier I:&r Diamond Greathammer"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4C5C59470EF4B066"]
+			id: "37E6D2174BE50673"
+			tasks: [{
+				id: "72A141763F09B828"
+				item: {
+					Count: 1b
+					id: "simplyswords:netherite_greathammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6&lTier II:&r Netherite Greathammer"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["37E6D2174BE50673"]
+			id: "37291CA13C42C006"
+			rewards: [
+				{
+					id: "2C0143BC9C4EEFA9"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:smite"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E5D23E49F96A6D8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "6854FF957E0D8AF7"
+				item: {
+					Count: 1b
+					id: "simplyswords:runic_greathammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c&lTier III:&r Runic Greathammer"
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["378A0B927C63B7E1"]
+			id: "62CFC8FEB21593B1"
+			tasks: [{
+				id: "50A9C6E053DA81AF"
+				item: {
+					Count: 1b
+					id: "betterend:aeternium_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6&lTier II:&r Aeternium Axe"
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3F841B26A7AB06AD"]
+			id: "6D5B237BEAE4E781"
+			tasks: [{
+				id: "10967D98B7CAAF96"
+				item: {
+					Count: 1b
+					id: "betterend:aeternium_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&6&lTier II:&r Aeternium Sword"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["62CFC8FEB21593B1"]
+			id: "7898AA99BFF00D58"
+			rewards: [{
+				id: "3F93F281D4C17E23"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "68E287F0CDFCDB89"
+				item: {
+					Count: 1b
+					id: "spectrum:bedrock_axe"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 6s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "&c&lTier III:&r Bedrock Axe"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6D5B237BEAE4E781"]
+			id: "300A9FC3C8AC5D3E"
+			rewards: [{
+				id: "252E9A03DB5D3730"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				id: "3D452C4F06275F2B"
+				item: {
+					Count: 1b
+					id: "spectrum:bedrock_sword"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 6s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "&c&lTier III:&r Bedrock Sword"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "6B6109C198B709D3"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "2AE4AB0AB6D88B92"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&c&lThe Prominent Warrior's Axe"
+			x: 5.838477891156458d
+			y: -4.116071428571431d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "49B35A9A42B58CCD"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "77B2AB29BA7A6D02"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&6&lThe Prominent Assassin's Sword"
+			x: 5.790858843537421d
+			y: -1.9732142857142847d
+		}
+		{
+			dependencies: ["60F3ED1DB095C177"]
+			id: "43186F903AE7AEF5"
+			tasks: [{
+				id: "7C36FD5EAAD03750"
+				item: {
+					Count: 1b
+					id: "wizards:wand_novice"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&d&lWizard's Path"
+			x: 0.00272108843537211d
+			y: -4.185034013605446d
+		}
+		{
+			dependencies: ["2CCD30451FA8C63D"]
+			id: "6563B08247EE9764"
+			rewards: [{
+				id: "21C05B1AADF0676B"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Make wooden armor. Lightweight armor is oriented to be used in ranged combat. &eThere are tons of different armor sets to choose from! &rEach one with their own benefits, so explore them and choose one that fits your style!"
+			tasks: [
+				{
+					id: "1B33B4CDE43EB611"
+					item: {
+						Count: 1b
+						id: "immersive_armors:wooden_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "102DCC841ED6FF2A"
+					item: {
+						Count: 1b
+						id: "immersive_armors:wooden_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D49A432031F3B96"
+					item: {
+						Count: 1b
+						id: "immersive_armors:wooden_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4A9BF7C72485AA94"
+					item: {
+						Count: 1b
+						id: "immersive_armors:wooden_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&eLightweight:&c Archer's Path"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["66F3C019DED5B416"]
+			id: "4714AB38D08781B5"
+			subtitle: "Obtain the powerful &dBedrock Bow&r from &eSpectrum"
+			tasks: [{
+				id: "2EA948EFBE2E1993"
+				item: {
+					Count: 1b
+					id: "spectrum:bedrock_bow"
+					tag: {
+						Enchantments: [{
+							id: "minecraft:power"
+							lvl: 6s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "486E6C23F4602D66"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "56D4757092455438"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&c&lThe Prominent Warrior's Armor"
+			x: 5.457929421768732d
+			y: 1.2577380952380963d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "00B489A9EA296A8D"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "33E8E891921BCF61"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&2&lThe Prominent Archer's Armor"
+			x: -4.988669217687047d
+			y: 1.1407312925170316d
+		}
+		{
+			dependencies: [
+				"2CC4725236A1626B"
+				"5B7085F5059B0BAA"
+				"0522FC23F73143B4"
+			]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "7D0660CA68903B73"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "4CB8D5AE108B1737"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&b&lThe Prominent Wizard's Robes"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["43186F903AE7AEF5"]
+			id: "3BCB62180BD68519"
+			rewards: [{
+				id: "29A45508E88A4B60"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "pentagon"
+			size: 1.1d
+			subtitle: "Get one of the three basic Wizard Wands. Faster casts with less power. Doesn't require a Spell Binding Table"
+			tasks: [{
+				id: "23D26BC64E59B0F7"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "wizards:basic_staves"
+					}
+				}
+				title: "Get an elemental staff"
+				type: "item"
+			}]
+			title: "&dWizard's Path: &9Ranged (Staffs)"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3BCB62180BD68519"]
+			id: "768EB99C87920709"
+			rewards: [{
+				id: "0010E7CE43A81510"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "6589DBA1F1E01DD9"
+				item: {
+					Count: 1b
+					id: "wizards:staff_ruby_fire"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&cFire Mastery:&9 Staff"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3BCB62180BD68519"]
+			id: "4D4A857F9779A600"
+			rewards: [{
+				id: "752F8F4969960405"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "wizards:staff_smaragdant_frost"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4BE98AB6528AC13D"
+				item: {
+					Count: 1b
+					id: "wizards:wand_netherite_frost"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&bFrost Mastery:&9 Staff"
+			x: -0.006122448979603234d
+			y: -6.782653061224487d
+		}
+		{
+			dependencies: ["3BCB62180BD68519"]
+			id: "2D483C240904F9F9"
+			rewards: [{
+				id: "31B83B7C110E809E"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "wizards:staff_crystal_arcane"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "0E958997C1CBF8B1"
+				item: {
+					Count: 1b
+					id: "wizards:wand_netherite_arcane"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&dArcane Mastery:&9 Staff"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["29113DC421F3CC39"]
+			id: "7F62642BED153637"
+			rewards: [{
+				id: "48850C4C9B640CD5"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "16519CAB9D018664"
+				item: {
+					Count: 1b
+					id: "spellbladenext:claymore_fire"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&cFire Mastery:&e Spellblade"
+			x: 1.5d
+			y: -5.3999999999999995d
+		}
+		{
+			dependencies: ["29113DC421F3CC39"]
+			id: "23D5E838899B9969"
+			rewards: [{
+				id: "21B1328AFC67713C"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "072D08E485EAF17F"
+				item: {
+					Count: 1b
+					id: "spellbladenext:claymore_frost"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&bFrost Mastery:&e Spellblade"
+			x: 1.2d
+			y: -5.7d
+		}
+		{
+			dependencies: ["29113DC421F3CC39"]
+			id: "66EA13C0D4317FF5"
+			rewards: [{
+				id: "13C17ADEBE5D4DC9"
+				type: "xp"
+				xp: 15
+			}]
+			shape: "diamond"
+			size: 0.6d
+			tasks: [{
+				id: "17076291CC0B6829"
+				item: {
+					Count: 1b
+					id: "spellbladenext:claymore_arcane"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&dArcane Mastery:&e Spellblade"
+			x: 0.8999999999999999d
+			y: -6.0d
+		}
+		{
+			dependencies: ["60F3ED1DB095C177"]
+			id: "40EE602458736895"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "2B36AD86791BF6E3"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			subtitle: "Get an &dHex Casting &rStaff. Become an advanced caster with powerful yet difficult spells, with big costs."
+			tasks: [{
+				id: "16E8C5BD7B117709"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "hexcasting:staves"
+					}
+				}
+				title: "Any #hexcasting:staves"
+				type: "item"
+			}]
+			title: "&d&lHex Sorcerer"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2D01683D97530E94"]
+			id: "7529D710B2C52C61"
+			rewards: [{
+				id: "545CD8785A88E40C"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "Make Bedrock Armor. You can craft bedrock armor by combining various powerful pieces from other dimensions."
+			tasks: [
+				{
+					id: "10E1234C75740D8F"
+					item: {
+						Count: 1b
+						id: "spectrum:bedrock_chestplate"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50B1064829688EDF"
+					item: {
+						Count: 1b
+						id: "spectrum:bedrock_helmet"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "39E5F3605FB2940A"
+					item: {
+						Count: 1b
+						id: "spectrum:bedrock_leggings"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E547856A44C9DB1"
+					item: {
+						Count: 1b
+						id: "spectrum:bedrock_boots"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&eHeavy:&c Bedrock"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6563B08247EE9764"]
+			id: "4B7E0447F3547030"
+			rewards: [
+				{
+					id: "76ACF0CFF9EE0293"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:projectile_protection"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04864C5321805E7A"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F0B64E2276539CB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Make bear fur armor. Lightweight armor is oriented to be used in ranged combat."
+			tasks: [
+				{
+					id: "142D53F422A50A70"
+					item: {
+						Count: 1b
+						id: "meadow:bear_fur_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A288B684937B69E"
+					item: {
+						Count: 1b
+						id: "meadow:bear_fur_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7464793925C1C342"
+					item: {
+						Count: 1b
+						id: "meadow:bear_fur_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B24B0BB0B2765FF"
+					item: {
+						Count: 1b
+						id: "meadow:bear_fur_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&eLightweight:&c Bear Fur"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/flame.png"
+				}
+			}
+			id: "01F68B3C1A72EA74"
+			shape: "octagon"
+			size: 1.25d
+			subtitle: "&cComing Soon..."
+			tasks: [{
+				id: "506EF89EE205ABEB"
+				title: "Coming soon!"
+				type: "custom"
+			}]
+			title: "&c&lThe Prominent Assassin's Armor"
+			x: 5.432079081632658d
+			y: 2.9849489795918345d
+		}
+	]
+	title: " &e&nEquipment Progression"
+}

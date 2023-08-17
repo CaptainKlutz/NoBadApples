@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "3E586F2160161EEA", title: "Exploration" }
+		{ id: "244F516C4853FD2F", title: "Magic" }
+		{ id: "49D52BD6447C5CC0", title: "Tech" }
+		{ id: "07288C17BA7C4C21", title: "The Early Game" }
+		{ id: "742FC41AA685E81E", title: "The Mid Game" }
+		{ id: "10DE9F155FD1EE1B", title: "The Late Game" }
+	]
+}

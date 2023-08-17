@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "spaaaaaaaaaace"
+	group: "10DE9F155FD1EE1B"
+	id: "3E99D24D621CD623"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		icon: "ad_astra:mars_globe"
+		id: "7D56C80C45616B9F"
+		shape: "hexagon"
+		size: 2.0d
+		tasks: [{
+			dimension: "ad_astra:mars"
+			id: "3337D929E4FF9D21"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Spaaaaaaaaaace!"
+}

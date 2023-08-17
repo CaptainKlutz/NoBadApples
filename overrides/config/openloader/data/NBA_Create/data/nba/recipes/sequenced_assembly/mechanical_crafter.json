@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:crafting_table"
+  },
+  "transitionalItem": {
+    "item": "create:brass_casing"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:brass_casing"
+        },
+        [
+          {
+            "item": "create:brass_sheet"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create:brass_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:brass_casing"
+        },
+        [
+          {
+            "item": "create:cogwheel"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create:brass_casing"
+        }
+      ]
+    },
+	{
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:brass_casing"
+        },
+        [
+          {
+            "item": "create:electron_tube"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create:brass_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:brass_casing"
+        }
+      ],
+      "results": [
+        {
+          "item": "create:brass_casing"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "create:mechanical_crafter"
+    }
+  ],
+  "loops": 1
+}

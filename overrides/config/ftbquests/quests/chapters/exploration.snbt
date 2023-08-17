@@ -1,0 +1,244 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "exploration"
+	group: "3E586F2160161EEA"
+	icon: "minecraft:filled_map"
+	id: "1734C156F46CD8A9"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "prominent:textures/text/looting.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.988095238095241d
+			y: -0.702380952380949d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "prominent:textures/text/bosses.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "prominent:textures/text/prision.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.511904761904759d
+			y: 3.702380952380956d
+		}
+	]
+	order_index: 0
+	quest_links: [
+		{
+			id: "21D51612E13934B5"
+			linked_quest: "0CB907C637805B86"
+			shape: "pentagon"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			id: "5AA7B31ECBD4C17D"
+			linked_quest: "6C8D88D7CA004F76"
+			shape: "pentagon"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			id: "3297C7D7191B74B4"
+			linked_quest: "3A66485539F39154"
+			shape: "pentagon"
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	quests: [
+		{
+			id: "1694F8F91DDCCFA0"
+			size: 1.25d
+			subtitle: "Loot a chest"
+			tasks: [{
+				icon: "lootr:lootr_chest"
+				id: "1BD855C373FFAB60"
+				stat: "lootr:looted_stat"
+				title: "Loot a chest!"
+				type: "stat"
+				value: 1
+			}]
+			title: "&eIs this yours...?"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1694F8F91DDCCFA0"]
+			id: "375DC495F463B374"
+			rewards: [{
+				id: "3345B11E6EE387A9"
+				type: "xp"
+				xp: 15
+			}]
+			subtitle: "&a- &rGet &bDiamonds"
+			tasks: [{
+				id: "4E1FBD0DBB3CEA30"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "&eShiny!!"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["375DC495F463B374"]
+			id: "7179D803ABE5DA7A"
+			rewards: [{
+				id: "6ABEEC84E151D5EB"
+				item: "minecells:health_flask"
+				type: "item"
+			}]
+			subtitle: "The portal to the &8Prison &rdimension spawns randomly throughout the &aOverworld&r. If you have, at any point, been in possession of a &bdiamond&r, the portal will already be activated."
+			tasks: [{
+				dimension: "minecells:prison"
+				icon: "graveyard:dark_iron_bars"
+				id: "24B5B09D08EAFD77"
+				type: "dimension"
+			}]
+			title: "&8The Prision"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7179D803ABE5DA7A"]
+			id: "7293410164C1C796"
+			rewards: [
+				{
+					id: "71287B55187087BF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "60136756A1EA6E4D"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			subtitle: "Spawns in &1The Lair&r, which can be found underground in the &8Prison &rdimension. To deal damage to the &dConjunctivius&r, you must first kill the tentacles."
+			tasks: [{
+				entity: "minecells:conjunctivius"
+				icon: {
+					Count: 1b
+					id: "minecells:tentacle"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "55018CFE4119D286"
+				title: "Defeat Conjunctivius"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lBossfight: &d&lConjunctivius"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1694F8F91DDCCFA0"]
+			icon: "lootr:lootr_barrel"
+			id: "5DA1E337C44EA538"
+			rewards: [
+				{
+					id: "746AE8280638610D"
+					item: {
+						Count: 1b
+						id: "bewitchment:besmirched_hood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6477121808D22E9B"
+					type: "xp"
+					xp: 25
+				}
+			]
+			subtitle: "Loot &e100 &rchests"
+			tasks: [{
+				icon: "lootr:lootr_chest"
+				id: "6A23F14163D90F9E"
+				stat: "lootr:looted_stat"
+				title: "Loot 100 chests"
+				type: "stat"
+				value: 100
+			}]
+			title: "&eMaster Thief"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1694F8F91DDCCFA0"]
+			icon: {
+				Count: 1b
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "jei:textures/gui/icons/info.png"
+				}
+			}
+			id: "686AC6EAB1DB7A9D"
+			subtitle: "These bosses are from the different chapters seen at the left of the quests. You can find more info by searching them in the specific chapter. &eClick on this quest's task to continue."
+			tasks: [{
+				disable_toast: true
+				id: "62B5617433325A9B"
+				title: "&eClick here to continue."
+				type: "checkmark"
+			}]
+			title: "&eInformation: &fBosses"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5DA1E337C44EA538"]
+			id: "3561EA2A8A05395A"
+			rewards: [{
+				id: "502E9CEB9F79EC67"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "&bRunic Tables &7are powerful materials used to craft different weapons with special abilities."
+			tasks: [{
+				id: "1A7E9B5D0FEDAD96"
+				item: "simplyswords:runic_tablet"
+				type: "item"
+			}]
+			title: "&7Get a &bRunic Tablet"
+			x: 5.0d
+			y: 0.0d
+		}
+	]
+	title: " &2&nExplorer's Journal"
+}

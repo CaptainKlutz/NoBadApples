@@ -1,0 +1,309 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "combat_experience"
+	group: "3E586F2160161EEA"
+	icon: "minecraft:zombie_head"
+	id: "760E3EC7AEF4232D"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 2.0d
+		hover: [ ]
+		image: "prominent:textures/text/combat_experience.png"
+		rotation: 0.0d
+		width: 5.008333333333334d
+		x: -4.0d
+		y: 0.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "623AAE199105BE76"
+			rewards: [{
+				id: "45CD97486B427245"
+				type: "xp"
+				xp: 5
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "&a-&r Kill a monster!"
+			tasks: [{
+				icon: "minecraft:skeleton_skull"
+				id: "15C7FCC48B69964E"
+				stat: "minecraft:mob_kills"
+				title: "Kill any mob"
+				type: "stat"
+				value: 1
+			}]
+			title: "Combat Experience"
+			x: 0.0d
+			y: 1.875d
+		}
+		{
+			dependencies: ["623AAE199105BE76"]
+			id: "7DC1A83E9A30C1FC"
+			rewards: [{
+				id: "250D7B9869CADF32"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "&a-&r Kill 25 monsters"
+			tasks: [{
+				icon: "graveyard:skull_on_pike"
+				id: "62DC1D3CB75D8DC0"
+				stat: "minecraft:mob_kills"
+				title: "Monster Hunter"
+				type: "stat"
+				value: 25
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["623AAE199105BE76"]
+			id: "0E2ECE905C93ABDD"
+			rewards: [
+				{
+					id: "0AA4C8F75F0A8200"
+					type: "xp"
+					xp: 5
+				}
+				{
+					id: "192E10484E825748"
+					item: {
+						Count: 1b
+						id: "meadow:hunting_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4435296C8717C40A"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "6FEBCF257F31C6DF"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			subtitle: "&a-&r Hunt a sheep, cow and pig"
+			tasks: [
+				{
+					entity: "minecraft:sheep"
+					icon: "spectrum:sheep_white_head"
+					id: "57E1BCD8696BAEBC"
+					title: "Kill a Sheep"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "minecraft:cow"
+					icon: "spectrum:cow_head"
+					id: "2E0EE8665B74C5D0"
+					title: "Kill a Cow"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "minecraft:pig"
+					icon: "spectrum:pig_head"
+					id: "6389AAACD3AB85EB"
+					title: "Kill a Pig"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Hunting 101"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["623AAE199105BE76"]
+			id: "398501FDDD719149"
+			shape: "pentagon"
+			subtitle: "&a- &rKill &e500&r mobs and &eThe Ender Dragon"
+			tasks: [
+				{
+					id: "1FC705F9DB5C96A6"
+					stat: "minecraft:mob_kills"
+					title: "Kill 500 Mobs"
+					type: "stat"
+					value: 500
+				}
+				{
+					entity: "minecraft:ender_dragon"
+					icon: "minecraft:dragon_head"
+					id: "3058D7B7C51E59BB"
+					title: "The Ender Dragon"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Novice Combatant"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E2ECE905C93ABDD"]
+			id: "6A2FCFF74913C54B"
+			rewards: [{
+				id: "4E83781E04F73C24"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Hunt a &6Mammoth&r. Found in &bcold &rbiomes."
+			tasks: [{
+				entity: "adventurez:mammoth"
+				icon: "adventurez:mammoth_tusk"
+				id: "3CA4F7B808218378"
+				title: "Kill a Mammoth"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&bCold Hunter"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0E2ECE905C93ABDD"]
+			id: "07CE8E67ED78E7B0"
+			rewards: [{
+				id: "2395848E15026AEB"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Hunt a &eDesert Rhino&r. Found in &edeserts&r."
+			tasks: [{
+				entity: "adventurez:desert_rhino"
+				icon: "adventurez:rhino_leather"
+				id: "6BF791102531AC99"
+				title: "Kill a Desert Rhino"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&eDesertic Hunter"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7DC1A83E9A30C1FC"]
+			id: "753DE893435F887A"
+			rewards: [{
+				id: "22917C7331DF51C6"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			subtitle: "Read the &8&lBook of Shadows &rfor more info"
+			tasks: [{
+				entity: "bewitchment:demon"
+				icon: "bewitchment:demon_heart"
+				id: "3DB2807CC63C3B28"
+				title: "Kill a Demon"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Kill a &cDemon"
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["753DE893435F887A"]
+			id: "0B30460D49425AE8"
+			rewards: [{
+				id: "3627EF6376BA99A9"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "diamond"
+			subtitle: "Read the &8&lBook of Shadows &rfor more info"
+			tasks: [{
+				entity: "bewitchment:baphomet"
+				icon: "bwplus:statue_baphomet_blackstone"
+				id: "674791CC45C1DC5B"
+				title: "Kill Baphomet"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&f&lBossfight: &eBaphomet"
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["753DE893435F887A"]
+			id: "2DF5D957684A761A"
+			rewards: [{
+				id: "11045C17729832BF"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "diamond"
+			subtitle: "Read the &8&lBook of Shadows &rfor more info"
+			tasks: [{
+				entity: "bewitchment:lilith"
+				icon: "bwplus:statue_lilith_blackstone"
+				id: "4592E2F4336DEF4D"
+				title: "Kill Lilith"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&f&lBossfight: &eLilith"
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["753DE893435F887A"]
+			id: "281235685EF0F351"
+			rewards: [{
+				id: "6693513C03762878"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "diamond"
+			subtitle: "Read the &8&lBook of Shadows &rfor more info"
+			tasks: [{
+				entity: "besmirchment:beelzebub"
+				icon: "spectrum:courier_statue"
+				id: "3A538A33433FB75B"
+				title: "Kill a Beelzebub"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&f&lBossfight: &eBeelzebub"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["753DE893435F887A"]
+			id: "09C189879C2A076F"
+			rewards: [{
+				id: "10AD0382745445D8"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+			shape: "diamond"
+			subtitle: "Read the &8&lBook of Shadows &rfor more info"
+			tasks: [{
+				entity: "bewitchment:herne"
+				icon: "bwplus:statue_herne_blackstone"
+				id: "44B3B786C6C3D0FD"
+				title: "Kill Herne"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&f&lBossfight: &eHerne"
+			x: -3.0d
+			y: 5.0d
+		}
+	]
+	title: " &aCombat Experience"
+}

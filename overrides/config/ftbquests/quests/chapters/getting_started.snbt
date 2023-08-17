@@ -1,0 +1,179 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:grass_block"
+	id: "7539C31213D86E55"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "botania:block/alchemy_catalyst_overlay"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "indrev:textures/item/iron_gear.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: -7.5d
+		}
+	]
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:grass_block"
+			id: "1DD302BB650057E3"
+			shape: "rsquare"
+			size: 1.25d
+			subtitle: "Enjoy your journey!"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:grass_block"
+				id: "7B701D980200A661"
+				title: "Enter the Overworld"
+				type: "dimension"
+			}]
+			title: "&aWelcome to PoP!"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1DD302BB650057E3"]
+			description: [""]
+			id: "6E9F5146EA3F505F"
+			subtitle: "&rGet going, punch one!"
+			tasks: [{
+				id: "4184344EFBA63388"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Punch a tree!"
+				type: "item"
+			}]
+			title: "&fObligatory Tree Punching"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			icon: "fwaystones:scroll_of_infinite_knowledge"
+			id: "6F99CB89833D7AA2"
+			shape: "hexagon"
+			subtitle: "You can open the &eTalent Tree&r by pressing &a\"K\"&r."
+			tasks: [{
+				id: "31F7356F773E8E8E"
+				title: "Click here to continue"
+				type: "checkmark"
+			}]
+			title: "&f&lProgression: &e&lThe Talent Tree"
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			id: "0104AB3740FF1494"
+			tasks: [{
+				id: "29B1D37D8512BB82"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Unlocking Create"
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E9F5146EA3F505F"]
+			id: "2CB85C3CE0ABFFCF"
+			tasks: [{
+				id: "20779B3AB7007BA1"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2CB85C3CE0ABFFCF"]
+			id: "65E9CC3565C431B6"
+			tasks: [{
+				id: "46362A6973FCCBF0"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["65E9CC3565C431B6"]
+			id: "4527C7DCE5FFBC3C"
+			tasks: [{
+				id: "4A2E330C0920EA0E"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["65E9CC3565C431B6"]
+			id: "0286937A5F5156C1"
+			tasks: [{
+				id: "257A2863FC04E3C2"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			title: "Unlocking AE2"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			id: "52B596E1294D7433"
+			tasks: [{
+				id: "30BEB25FFC59462E"
+				item: "hwg:gun_table"
+				type: "item"
+			}]
+			title: "Unlocking Guns"
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4527C7DCE5FFBC3C"]
+			id: "46A97739F17C1313"
+			tasks: [{
+				id: "077B5AEFCB454AA9"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "61E588DED099B3C4"
+			tasks: [{
+				id: "41BD296B44F71D82"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+	]
+	title: " Getting Started"
+}

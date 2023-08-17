@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "ae2:certus_quartz_dust"
+  },
+  "transitionalItem": {
+    "item": "ae2:certus_quartz_crystal"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        },
+        [
+          {
+            "item": "ae2:certus_quartz_crystal"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        }
+      ]
+    },
+	{
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        },
+        [
+          {
+            "item": "minecraft:sand"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        }
+      ]
+    },
+	{
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        },
+		{
+		  "amount": 40500,
+		  "fluid": "minecraft:water",
+		  "nbt": {}
+		}
+      ],
+      "results": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        }
+      ]
+    },
+	{
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        }
+      ],
+      "results": [
+        {
+          "item": "ae2:certus_quartz_crystal"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:quartz_block"
+    }
+  ],
+  "loops": 1
+}
